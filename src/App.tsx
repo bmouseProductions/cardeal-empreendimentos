@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HeaderCarousel from "./components/Header";
 import Sobre from "./pages/sobre/Sobre";
 import Frutal from "./pages/Empreendimentos/Frutal";
+import { ButtonUp } from "./components/buttonUp";
 
 function App() {
   return (
@@ -12,12 +13,16 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <HeaderCarousel />
+        <ButtonUp />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
 
-          <Route path="/nova-serrana" element={<Frutal name='Nova Serrana' />} />
-          <Route path="/frutal" element={<Frutal name="Frutal"  />} />
+          <Route
+            path="/nova-serrana"
+            element={<Frutal name="Nova Serrana" />}
+          />
+          <Route path="/frutal" element={<Frutal name="Frutal" />} />
         </Routes>
         <Footer />
       </BrowserRouter>

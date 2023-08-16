@@ -8,6 +8,31 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-color: #ffffff, #193592;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar-track {
+  /*  background: linear-gradient(360deg, #000, #ad290c); */
+  background: #fff;
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #193592;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+::selection {
+  color: #fff;
+  background-color: #193592;
+}
+
 p {
   color: #888;
   font-size: 15px;
@@ -251,8 +276,7 @@ p {
   }
 } */
 
-
-.bg-gradient{
+.bg-gradient {
   background-image: url(/bg-gradient.webp);
   background-position: center;
 }

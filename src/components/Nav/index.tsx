@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   MobileNav,
@@ -17,13 +17,30 @@ export function NavBar() {
     );
   }, []);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex   flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
-        variant="small"
+        variant="bold"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-xl"
       >
         <a href="/" className="flex items-center">
           Home
@@ -31,9 +48,9 @@ export function NavBar() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="bold"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-xl"
       >
         <a href="/sobre" className="flex items-center">
           Sobre
@@ -41,9 +58,9 @@ export function NavBar() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="bold"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-xl"
       >
         <a href="/frutal" className="flex items-center">
           Frutal
@@ -52,9 +69,9 @@ export function NavBar() {
 
       <Typography
         as="li"
-        variant="small"
+        variant="bold"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-xl"
       >
         <a href="/nova-serrana" className="flex items-center">
           Nova Serrana
@@ -64,7 +81,13 @@ export function NavBar() {
   );
 
   return (
-    <Navbar className="mx-auto py-2 px-4 lg:px-8 lg:py-6 absolute top-0 left-0 w-full bg-transparent border-b-1 border-l-0 border-r-0 border-t-0  z-50 border-white-opacity-02 ">
+    <Navbar
+      className={`mx-auto font-bold py-2 px-4 lg:px-8 lg:py-6 fixed top-0 left-0 w-full   z-50 border-0 ${
+        scrolled
+          ? "bg-[#1B3BA0] bg-opacity-40 backdrop-blur-md border-rounded transition-all duration-300  text-white"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -77,9 +100,9 @@ export function NavBar() {
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
           <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
-            <FaFacebook className="text-white text-sm" />
-            <FaTwitter className="text-white text-sm" />
-            <FaYoutube className="text-white text-sm" />
+            <FaFacebook className="text-white text-2xl " />
+            <FaTwitter className="text-white text-2xl" />
+            <FaYoutube className="text-white text-2xl" />
           </div>
         </div>
         {/* Substituir o botão Buy Now pelos ícones */}
