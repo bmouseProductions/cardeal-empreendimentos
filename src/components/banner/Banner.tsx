@@ -1,21 +1,27 @@
 
 interface PropsBanner {
-    imagem: string;
+    bg: string;
     nome: string;
+    calcText: string
 }
 
-export default function Banner( { imagem, nome}:PropsBanner ){
+export default function Banner( { bg, nome, calcText}:PropsBanner ){
+    const style = 'max-w-full w-screen h-screen bg-opacity-80 ' + bg
+    const calcTextClass = calcText
     return (
-        <section>
-            <div className="relative w-screen h-screen">
-                <img src={imagem} alt="" className="w-screen h-screen"/>
+        <section className="relative">
+            <div className={style}>
+                <div className="bg-black w-full h-full opacity-80 relative">
+                    <div className={calcTextClass}>
+                        <h1 className="text-6xl text-white font-bold">
+                            {nome}
+                        </h1>
+                    </div>
+                </div>
+                
             </div>
 
-            <div>
-                <h1 className="text-6xl text-white font-bold">
-                    {nome}
-                </h1>
-            </div>
+            
 
         </section>
     )

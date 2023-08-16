@@ -280,3 +280,19 @@ p {
   background-image: url(/bg-gradient.webp);
   background-position: center;
 }
+
+.bg-frutal{
+  background-image: url(/public/MONTAGEM-001.webp);
+}
+
+.calc-text-frutal{
+  position: absolute;
+  top: calc(50% - 60px);
+  right: calc(50% - 65px);
+}
+
+.calc-text-serrana{
+  position: absolute;
+  top: calc(50% - 60px);
+  right: calc(50% - 190px);
+}

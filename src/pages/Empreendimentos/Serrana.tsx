@@ -9,13 +9,13 @@ interface EmpreedimentosProps{
   name: string
 }
 
-const Frutal = ( {name}:EmpreedimentosProps ) => {
+const Serrana = ( {name}:EmpreedimentosProps ) => {
   return (
     <div>
       <Banner 
         nome={name}
         bg="bg-frutal" //passar a classe CSS com o bg image de cada loteamento
-        calcText="calc-text-frutal"
+        calcText="calc-text-serrana" // passar a classe CSS com a classe de texto de cada loteamento
       />
       
       <div>
@@ -34,7 +34,7 @@ const Frutal = ( {name}:EmpreedimentosProps ) => {
   );
 };
 
-export default Frutal;
+export default Serrana;
 
 /*
 <div className="">
