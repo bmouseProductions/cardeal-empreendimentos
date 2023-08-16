@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/Nav";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
-import HeaderCarousel from "./components/Header";
+/* import HeaderCarousel from "./components/Header"; */
 import Sobre from "./pages/sobre/Sobre";
 import Frutal from "./pages/Empreendimentos/Frutal";
 import { ButtonUp } from "./components/buttonUp";
@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <HeaderCarousel />
+
         <ButtonUp />
         <Routes>
           <Route path="/" element={<Home />} />

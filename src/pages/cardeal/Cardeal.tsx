@@ -4,6 +4,25 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, FreeMode } from "swiper/modules";
 
+/* interface propsImg {
+  img: string;
+} */
+
+const info = [
+  {
+    img: "/DJI_0004.JPG",
+  },
+  {
+    img: "/DJI_0005.JPG",
+  },
+  {
+    img: "/DJI_0011.JPG",
+  },
+  {
+    img: "/DJI_0012.JPG",
+  },
+];
+
 const Cardeal = () => {
   return (
     <section className="py-16 lg:py-32">
@@ -37,10 +56,10 @@ const Cardeal = () => {
                   },
                 }}
               >
-                {[...Array(5)].map((_, index) => (
+                {[info].map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="relative imago">
-                      <img src="/casa.jpeg" alt={`Imagem ${index + 1}`} />
+                      <img src={item.img} alt={`Imagem ${index + 1}`} />
                       <div className="mt-6 md:mt-8 text-center">
                         <h6 className="text-[#005ed3] text-xs font-medium uppercase tracking-wider">
                           Art & Illustration
