@@ -12,7 +12,6 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <HeaderCarousel />
         <ButtonUp />
         <Routes>
           <Route path="/" element={<Home />} />
