@@ -19,9 +19,7 @@ const Testimonials = () => {
               <div className="p-6 md:p-10 border-4 border-white border-solid border-t-0 relative">
                 <div className="cont">
                   <p className="text-base md:text-lg font-normal italic text-white playfont">
-                    "I just love their design for all stunning details. You must
-                    know what can you do for a project before taking it, but
-                    with Archo, the sky is the limit."
+                    "Realizar o sonho da casa própria nunca foi tão tranquilo. A Cardeal me proporcionou um lote com localização privilegiada e infraestrutura completa. Estou ansioso para construir meu lar em um empreendimento tão bem planejado."
                   </p>
                 </div>
               </div>
@@ -35,9 +33,7 @@ const Testimonials = () => {
               <div className="p-6 md:p-10 border-4 border-white border-solid border-t-0 relative">
                 <div className="cont">
                   <p className="text-base md:text-lg font-normal italic text-white playfont">
-                    "I just love their design for all stunning details. You must
-                    know what can you do for a project before taking it, but
-                    with Archo, the sky is the limit."
+                    "Encontrei na Cardeal o espaço perfeito para o meu negócio. Comprei um lote comercial em um empreendimento promissor. A equipe foi extremamente atenciosa e o processo foi descomplicado. Mal posso esperar para ver meu empreendimento crescer aqui."
                   </p>
                 </div>
               </div>

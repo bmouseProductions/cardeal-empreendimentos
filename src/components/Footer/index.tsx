@@ -77,8 +77,8 @@ const Footer: React.FC = () => {
                   Telefone
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
-                <p className="text-sm text-white">+7(111)123456789</p>
-                <p className="text-sm text-white">+1(000)987654321</p>
+                <a href="tel:+553438251791" className="text-sm text-white">(34) 3825-1791</a>
+                <a href="tel:+5534995440078" className="text-sm text-white">(34) 9 9544-0078</a>
               </div>
             </div>
             <div className="md:w-2/4">
@@ -87,8 +87,7 @@ const Footer: React.FC = () => {
                   Email
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
-                <p className="text-sm text-white">contact@Archo.com</p>
-                <p className="text-sm text-white">Username@website.com</p>
+                <a href="mailto:flavia@empreendimentoscardeal.com.br" className="text-sm text-white">flavia@empreendimentoscardeal.com.br</a>
               </div>
             </div>
             <div className="md:w-2/4">
@@ -99,7 +98,7 @@ const Footer: React.FC = () => {
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
                 <p className="text-sm text-white ">
-                  B17 Princess Road, Londres, Grande Londres NW18JR, Reino Unido
+                  R. João da Rocha Filgueira, 340 - Centro Patos de Minas - MG 38700-074
                 </p>
               </div>
             </div>
