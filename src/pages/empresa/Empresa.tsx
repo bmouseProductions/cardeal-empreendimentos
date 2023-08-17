@@ -58,10 +58,10 @@ const Empresa = () => {
             </h4>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols justify-center items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-5 ">
           {/* Repeating structure for each team member */}
           {Array.from({ length: 5 }).map((_, index) => (
-            <div key={index} className="px-4 lg:w-1/4 md:w-1/2 relative mb-8">
+            <div key={index} className=" relative w-[250px] m-auto ">
               <div className="overflow-hidden imagem">
                 <img
                   src="/cara.jpeg"

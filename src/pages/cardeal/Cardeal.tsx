@@ -4,6 +4,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, FreeMode } from "swiper/modules";
 
+
+
 const Cardeal = () => {
   return (
     <section className="py-16 lg:py-32">
@@ -37,21 +39,11 @@ const Cardeal = () => {
                   },
                 }}
               >
-                {[...Array(5)].map((_, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="relative imago">
-                      <img src="/casa.jpeg" alt={`Imagem ${index + 1}`} />
-                      <div className="mt-6 md:mt-8 text-center">
-                        <h6 className="text-[#005ed3] text-xs font-medium uppercase tracking-wider">
-                          Art & Illustration
-                        </h6>
-                        <h4 className="font-normal text-base md:text-2xl">
-                          Inspirance new Space.
-                        </h4>
-                      </div>
-                    </div>
+               
+                  <SwiperSlide >
+                    
                   </SwiperSlide>
-                ))}
+                
               </Swiper>
             </div>
           </div>

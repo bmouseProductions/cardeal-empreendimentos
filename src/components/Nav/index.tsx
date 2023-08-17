@@ -100,9 +100,15 @@ export function NavBar() {
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
           <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
-            <FaFacebook className="text-white text-2xl " />
-            <FaTwitter className="text-white text-2xl" />
-            <FaYoutube className="text-white text-2xl" />
+            <a href="https://google.com" target="_blank">
+              <FaFacebook className="text-white text-2xl " />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <FaTwitter className="text-white text-2xl" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <FaYoutube className="text-white text-2xl" />
+            </a>
           </div>
         </div>
         {/* Substituir o botão Buy Now pelos ícones */}
@@ -149,9 +155,15 @@ export function NavBar() {
         <div className="container mx-auto">
           {navList}
           <div className="flex items-center justify-center gap-4">
-            <FaFacebook className="text-white text-2xl" />
-            <FaTwitter className="text-white text-2xl" />
-            <FaYoutube className="text-white text-2xl" />
+            <a href="https://google.com" target="_blank">
+              <FaFacebook className="text-white text-2xl " />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <FaTwitter className="text-white text-2xl" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <FaYoutube className="text-white text-2xl" />
+            </a>
           </div>
         </div>
       </MobileNav>

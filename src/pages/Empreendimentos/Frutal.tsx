@@ -1,9 +1,7 @@
 
 import Banner from "../../components/banner/Banner";
 import Skill from "../../components/skill";
-import Cardeal from "../cardeal/Cardeal";
-
-//import frutal from "../../../public/MONTAGEM-001.WEBP"
+//import Cardeal from "../cardeal/Cardeal";
 
 interface EmpreedimentosProps{
   name: string
@@ -22,14 +20,9 @@ const Frutal = ( {name}:EmpreedimentosProps ) => {
         <h1 className="text-5xl playfont py-20 text-center"> {name} </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur quaerat optio dicta corporis sunt nulla maiores illum non dolores cumque, odio veritatis voluptates, ipsum a quae? Non, delectus quia.</p>
       </div>
-      
-      <Skill
-        ruas={10}
-        terra={15}
-        inovation={30}
-        pluvial={20}
-      />
-      <Cardeal />
+
+      <Skill ruas={10} terra={15} inovation={30} pluvial={20} />
+      {/*<Cardeal img="/DJI_0005.JPG" />*/}
     </div>
   );
 };
