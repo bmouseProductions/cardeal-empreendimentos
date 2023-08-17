@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Navbar,
   MobileNav,
@@ -17,22 +17,22 @@ export function NavBar() {
     );
   }, []);
 
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 0) {
+  //     setScrolled(true);
+  //   } else {
+  //     setScrolled(false);
+  //   }
+  // // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const navList = (
     <ul className="mb-4 mt-2 flex   flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
