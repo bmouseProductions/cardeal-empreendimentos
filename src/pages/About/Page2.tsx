@@ -1,8 +1,12 @@
 const Page2 = () => {
   return (
     <>
-      <section className="relative py-16 md:py-24">
+    <img src='/img-about.webp' alt=""  />
+      {/*<section className="relative py-16 md:py-24">
+      
         <div className="px-4 md:px-8 lg:px-16 xl:px-32">
+          
+          
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-6 md:mb-0">
               <img
@@ -37,7 +41,7 @@ const Page2 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
     </>
   );
 };

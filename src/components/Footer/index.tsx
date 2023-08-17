@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -11,31 +13,28 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className="w-full flex px-5  flex-col bg-gradient text-white pt-10">
-      <a className="container m-auto">
-        <img src="/icon-cardeal.png" width={70} className="mb-3" />
-      </a>
+      
       <div className="container  m-auto">
         <div className="flex flex-col md:flex-row lg:space-x-32">
           <div className="md:max-w-[350px] lg:w-1/5 mb-5">
-            <p className="text-base text-white">
-              Nossa equipe cuida de tudo, desde o desenvolvimento de ideias e
-              conceitos até a realização.
-            </p>
+            <a >
+              <img src="/icon-cardeal.png" width={70} className="mb-3 mx-auto" />
+            </a>
 
-            <div className=" flex  gap-3 mt-5 ">
-              <a className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+            <div className=" flex justify-center gap-3 mt-5 ">
+              <a href="https://www.facebook.com/empreendimentoscardeal" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
 
-              <a className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a href="https://www.instagram.com/empreendimentoscardeal/" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
 
-              <a className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a href="" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
                 <FontAwesomeIcon icon={faTiktok} />
               </a>
 
-              <a className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a href="https://www.youtube.com/@EmpreendimentosCardeal" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
@@ -49,9 +48,26 @@ const Footer: React.FC = () => {
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
                 <ul className="m-0 flex flex-col gap-2">
-                  <li>Home</li>
-                  <li>Sobre</li>
-                  <li>Empreendimentos</li>
+                  <li>
+                    <Link to={'/'}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/sobre'}>
+                      Sobre
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/frutal'}>
+                      Frutal
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/nova-serrana'}>
+                      Nova Serrana
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

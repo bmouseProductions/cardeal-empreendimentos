@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -15,18 +16,18 @@ html {
 ::-webkit-scrollbar-track {
   /*  background: linear-gradient(360deg, #000, #ad290c); */
   background: #fff;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #193592;
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
 }
 ::selection {
   color: #fff;
@@ -34,7 +35,6 @@ html {
 }
 
 p {
-  color: #888;
   font-size: 15px;
   font-weight: 400;
   line-height: 2;
@@ -99,20 +99,7 @@ p {
   font-family: "Teko", sans-serif;
 }
 
-.teko {
-  font-family: "Teko", sans-serif;
-}
 
-.playfair {
-  font-family: "Playfair Display", serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.playfont {
-  font-family: "Playfair Display", serif;
-}
 
 .numb {
   font-size: 60px;
@@ -192,7 +179,7 @@ p {
   background: rgba(255, 255, 255, 0.1) !important;
   fill: #fff;
   font-size: 20px !important;
-  font-family: "Teko", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .skills-circle {
@@ -276,19 +263,40 @@ p {
   }
 } */
 
-
-
 .bg-gradient {
   background-image: url(/bg-gradient.webp);
   background-position: center;
-  background-repeat: no-repeat;
+}
+
+/*BANNER*/
+
+.bg-frutal{
+  background-image: url(/BannerMobile3.webp);
+  background-position: center;
   background-size: cover;
 }
 
-.bg-frutal{
-  background-image: url(/public/MONTAGEM-001.webp);
-  
+.bg-serrana{
+  background-image: url(/BannerMobile2.webp);
+  background-position: center;
+  background-size: cover;
 }
+
+@media (min-width:1024px){
+  .bg-frutal{
+    background-image: url(/Banner3.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .bg-serrana{
+    background-image: url(/Banner2.webp);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
 
 .calc-text-frutal{
   position: absolute;

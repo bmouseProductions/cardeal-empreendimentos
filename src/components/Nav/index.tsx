@@ -5,7 +5,7 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
-import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa"; // Importando os ícones
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"; // Importando os ícones
 
 export function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -100,13 +100,13 @@ export function NavBar() {
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
           <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
-            <a href="https://google.com" target="_blank">
+            <a href="https://www.facebook.com/empreendimentoscardealm" target="_blank">
               <FaFacebook className="text-white text-2xl " />
             </a>
-            <a href="https://google.com" target="_blank">
-              <FaTwitter className="text-white text-2xl" />
+            <a href="https://www.instagram.com/empreendimentoscardeal/" target="_blank">
+              <FaInstagram className="text-white text-2xl" />
             </a>
-            <a href="https://google.com" target="_blank">
+            <a href="https://www.youtube.com/@EmpreendimentosCardeal" target="_blank">
               <FaYoutube className="text-white text-2xl" />
             </a>
           </div>
@@ -155,13 +155,13 @@ export function NavBar() {
         <div className="container mx-auto">
           {navList}
           <div className="flex items-center justify-center gap-4">
-            <a href="https://google.com" target="_blank">
+            <a href="https://www.facebook.com/empreendimentoscardeal" target="_blank">
               <FaFacebook className="text-white text-2xl " />
             </a>
-            <a href="https://google.com" target="_blank">
-              <FaTwitter className="text-white text-2xl" />
+            <a href="https://www.instagram.com/empreendimentoscardeal/" target="_blank">
+              <FaInstagram className="text-white text-2xl" />
             </a>
-            <a href="https://google.com" target="_blank">
+            <a href="https://www.youtube.com/@EmpreendimentosCardeal" target="_blank">
               <FaYoutube className="text-white text-2xl" />
             </a>
           </div>

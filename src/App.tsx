@@ -12,8 +12,6 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-
-        <ButtonUp />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
@@ -22,6 +20,7 @@ function App() {
           <Route path="/frutal" element={<Frutal name="Frutal" />} />
         </Routes>
         <Footer />
+        <ButtonUp />
       </BrowserRouter>
     </>
   );

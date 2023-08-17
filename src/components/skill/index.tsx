@@ -4,15 +4,15 @@ import "react-circular-progressbar/dist/styles.css";
 interface PropsSkill{
   ruas: number;
   terra: number;
-  inovation: number;
+  esgoto: number;
   pluvial: number;
 }
 
-const Skill = ( {ruas, terra, inovation, pluvial}:PropsSkill ) => {
+const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
 
   const percentageRuas = ruas; // Set your desired percentage value here
   const percentageTerra = terra;
-  const percentageInovation = inovation;
+  const percentageEsgoto = esgoto;
   const percentagePluvial = pluvial;
   
 
@@ -66,11 +66,11 @@ const Skill = ( {ruas, terra, inovation, pluvial}:PropsSkill ) => {
               <div className="relative">
                 <CircularProgressbar
                   className="skills-circle"
-                  value={percentageInovation}
-                  text={`${percentageInovation}%`}
+                  value={percentageEsgoto}
+                  text={`${percentageEsgoto}%`}
                 />
                 <h6 className="text-sm uppercase tracking-[2px] mt-3 text-white">
-                  INOVATION
+                  Rede de Esgoto
                 </h6>
               </div>
             </div>

@@ -11,7 +11,7 @@ const Services = () => {
           </h4>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
-          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+          <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">01</h2>
             <h6 className="mb-3 md:mb-4">Iluminação em Led</h6>
             <p className="text-sm md:text-base">
@@ -19,7 +19,7 @@ const Services = () => {
               consequat.
             </p>
           </div>
-          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+          <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">02</h2>
             <h6 className="mb-3 md:mb-4">Energia elétrica e iluminação</h6>
             <p className="text-sm md:text-base">
@@ -27,7 +27,7 @@ const Services = () => {
               consequat.
             </p>
           </div>
-          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+          <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">03</h2>
             <h6 className="mb-3 md:mb-4">Asfalto, guias e sarjetas</h6>
             <p className="text-sm md:text-base">
@@ -35,7 +35,7 @@ const Services = () => {
               consequat.
             </p>
           </div>
-          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+          <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">04</h2>
             <h6 className="mb-3 md:mb-4">Sinalização Viária</h6>
             <p className="text-sm md:text-base">

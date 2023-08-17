@@ -1,7 +1,7 @@
 import About from "../../components/about";
 import Testimonials from "../team/testimonials";
 import Services from "../../components/services";
-import { SectionJV } from "../SectionJV";
+import { SectionJV } from "../../components/SectionJV";
 import HeaderCarousel from "../../components/Header";
 
 const Home = () => {
