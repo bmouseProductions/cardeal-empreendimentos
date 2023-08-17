@@ -13,13 +13,13 @@ const info: propsImg[] = [
     image: "/DJI_0004.webp",
   },
   {
-    image: "/DJI_0005.webp",
+    image: "/loteamento2.webp",
   },
   {
-    image: "/DJI_0011.webp",
+    image: "/loteamento3.webp",
   },
   {
-    image: "/DJI_0012.webp",
+    image: "/loteamento4.webp",
   },
 ];
 
