@@ -7,7 +7,7 @@ const Testimonials = () => {
             O que nossos
           </h6>
           <h4 className="font-medium text-white text-2xl md:text-4xl lg:text-5xl tracking-[1px] playfont">
-            Clientes falam ?
+            Clientes falam
           </h4>
         </div>
         <div className="grid gap-8 md:gap-12 lg:gap-16 grid-cols-1 md:grid-cols-2">

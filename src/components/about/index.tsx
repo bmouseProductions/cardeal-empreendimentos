@@ -57,7 +57,7 @@ const About = () => {
                   <div className="relative">
                     <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
                     <h3 className="mb-2 text-2xl md:text-4xl">
-                      <span className="text-4xl md:text-6xl text-blue-900 teko font-normal">
+                      <span className="text-4xl md:text-6xl text-blue-900 font-bold">
                         +30
                       </span>
                       <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
@@ -69,7 +69,7 @@ const About = () => {
                   <div className="relative">
                     <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
                     <h3 className="mb-2 text-2xl md:text-4xl">
-                      <span className="text-4xl md:text-6xl text-blue-900 teko font-normal">
+                      <span className="text-4xl md:text-6xl text-blue-900  font-bold">
                         + 50 mil
                       </span>
                       <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
