@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="relative py-32 about">
+    <section className="relative py-32 about bg-white">
       <div className="px-4 md:px-8 lg:px-32">
         {" "}
         {/* Adjust padding for different screen sizes */}
