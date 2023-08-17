@@ -11,10 +11,10 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className="w-full flex px-5  flex-col bg-gradient text-white pt-10">
-      <a>
+      <a className="container m-auto">
         <img src="/icon-cardeal.png" width={70} className="mb-3" />
       </a>
-      <div className="  container  m-auto">
+      <div className="container  m-auto">
         <div className="flex flex-col md:flex-row lg:space-x-32">
           <div className="md:max-w-[350px] lg:w-1/5 mb-5">
             <p className="text-base text-white">

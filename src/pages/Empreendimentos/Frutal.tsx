@@ -1,7 +1,7 @@
 
 import Banner from "../../components/banner/Banner";
 import Skill from "../../components/skill";
-//import Cardeal from "../cardeal/Cardeal";
+
 
 interface EmpreedimentosProps{
   name: string

@@ -84,7 +84,7 @@ export function NavBar() {
     <Navbar
       className={`mx-auto font-bold py-2 px-4 lg:px-8 lg:py-6 fixed top-0 left-0 w-full   z-50 border-0 ${
         scrolled
-          ? "bg-[#1B3BA0] bg-opacity-40 backdrop-blur-md border-rounded transition-all duration-300  text-white"
+          ? "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white"
           : "bg-transparent"
       }`}
     >

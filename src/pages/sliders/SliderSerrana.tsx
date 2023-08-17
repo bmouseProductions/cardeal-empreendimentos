@@ -23,7 +23,7 @@ const info: propsImg[] = [
   },
 ];
 
-const Cardeal = () => {
+const SliderSerrana = () => {
   return (
     <section className="py-16 lg:py-32">
       <div className="px-4 md:px-8 lg:px-16 xl:px-32">
@@ -100,4 +100,4 @@ const Cardeal = () => {
   );
 };
 
-export default Cardeal;
+export default SliderSerrana;

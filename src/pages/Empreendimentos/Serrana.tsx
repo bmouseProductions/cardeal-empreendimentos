@@ -1,7 +1,7 @@
 
 import Banner from "../../components/banner/Banner";
 import Skill from "../../components/skill";
-import Cardeal from "../cardeal/Cardeal";
+import SliderSerrana from "../sliders/SliderSerrana";
 
 //import frutal from "../../../public/MONTAGEM-001.WEBP"
 
@@ -29,7 +29,7 @@ const Serrana = ( {name}:EmpreedimentosProps ) => {
         inovation={30}
         pluvial={20}
       />
-      <Cardeal />
+      <SliderSerrana />
     </div>
   );
 };
