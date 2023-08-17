@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap md:w-full lg:space-x-8">
-            <div className="md:w-2/4">
+          <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap md:w-full">
+            {/*<div className="md:w-2/4">
               <div className="mb-8 flex flex-col gap-2">
                 <h6 className="text-white font-bold text-lg uppercase tracking-[2px] mb-1">
                   Links Úteis
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="md:w-2/4">
               <div className="mb-8 flex flex-col gap-2">
                 <h6 className="text-white font-bold text-lg uppercase tracking-[2px] mb-1">
