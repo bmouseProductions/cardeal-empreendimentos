@@ -30,10 +30,10 @@ const SliderSerrana = () => {
         <div className="relative mx-auto mb-10 text-center">
           <div className="lg:col-span-6 md:col-span-8 sm:col-span-10">
             <h6 className="font-light text-base uppercase tracking-[4px] mb-2 md:mb-3 teko">
-              Nossos
+              Nossa
             </h6>
             <h4 className="font-medium text-2xl md:text-4xl tracking-[2px] playfont">
-              Trabalhos
+              Galeria
             </h4>
           </div>
         </div>
