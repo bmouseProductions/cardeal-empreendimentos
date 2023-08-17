@@ -4,10 +4,10 @@ const Testimonials = () => {
       <div className="px-4 md:px-8 lg:px-16 xl:px-32">
         <div className="text-center mb-10">
           <h6 className="text-white font-light text-sm md:text-base lg:text-lg uppercase tracking-[2px] teko">
-            O que nossos
+          O QUE 
           </h6>
           <h4 className="font-medium text-white text-2xl md:text-4xl lg:text-5xl tracking-[1px] playfont">
-            Clientes falam
+            Nossos clientes falam
           </h4>
         </div>
         <div className="grid gap-8 md:gap-12 lg:gap-16 grid-cols-1 md:grid-cols-2">
