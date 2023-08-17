@@ -15,32 +15,28 @@ const Services = () => {
             <h2 className="teko font-normal text-lg md:text-xl numb">01</h2>
             <h6 className="mb-3 md:mb-4">Iluminação em Led</h6>
             <p className="text-sm md:text-base">
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
+            A luz de LED ilumina nosso loteamento, proporcionando segurança e uma atmosfera acolhedora a todos.
             </p>
           </div>
           <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">02</h2>
             <h6 className="mb-3 md:mb-4">Energia elétrica e iluminação</h6>
             <p className="text-sm md:text-base">
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
+            Energia eficiente e iluminação cuidadosa trazem vida e conforto para cada lar, mantendo nossa comunidade conectada e vibrante.
             </p>
           </div>
           <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">03</h2>
             <h6 className="mb-3 md:mb-4">Asfalto, guias e sarjetas</h6>
             <p className="text-sm md:text-base">
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
+            Nossas ruas bem pavimentadas, guias e sarjetas impecáveis refletem um ambiente bem-cuidado e acessível para todos.
             </p>
           </div>
           <div className="py-10 px-6 md:px-10 h-full bg-white  border border-solid border-[#eee] transition-all duration-300 hover:bg-[#00000099] !hover:text-white box">
             <h2 className="teko font-normal text-lg md:text-xl numb">04</h2>
             <h6 className="mb-3 md:mb-4">Sinalização Viária</h6>
             <p className="text-sm md:text-base">
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
+            Uma sinalização viária clara e inteligente não apenas orienta, mas também promove a tranquilidade e a circulação segura de residentes e visitantes.
             </p>
           </div>
         </div>
