@@ -19,7 +19,7 @@ const Serrana = ( {name}:EmpreedimentosProps ) => {
       />
       
       <div className="container flex flex-col items-center py-20 text-black">
-        <h1 className="text-5xl text-center">Loteamento {name}</h1>
+        <h1 className="text-5xl text-center font-bold bg-blue-700 text-white p-3">Loteamento {name}</h1>
         <div className="w-[90%] lg:w-2/3  ">
           <p className="w-full py-5 text-xl">
             Nosso loteamento é uma ótima opção para você! Localizado em uma região privilegiada, próximo a uma variedade de comodidades que incluem:

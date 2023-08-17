@@ -100,7 +100,7 @@ export function NavBar() {
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
           <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
-            <a href="https://www.facebook.com/empreendimentoscardealm" target="_blank">
+            <a href="https://www.facebook.com/empreendimentoscardeal" target="_blank">
               <FaFacebook className="text-white text-2xl " />
             </a>
             <a href="https://www.instagram.com/empreendimentoscardeal/" target="_blank">
