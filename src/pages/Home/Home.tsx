@@ -6,7 +6,7 @@ import HeaderCarousel from "../../components/Header";
 
 const Home = () => {
   return (
-    <div>
+    <div className="!pt-[98.5px] bg-black lg:pt-0 ">
       <HeaderCarousel />
       <About />
       <Testimonials />

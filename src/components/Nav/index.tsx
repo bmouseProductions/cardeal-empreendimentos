@@ -35,7 +35,7 @@ export function NavBar() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex   flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex   flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography
         as="li"
         variant="bold"
@@ -62,19 +62,8 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <a href="/frutal" className="flex items-center">
-          Frutal
-        </a>
-      </Typography>
-
-      <Typography
-        as="li"
-        variant="bold"
-        color="blue-gray"
-        className="p-1 text-xl"
-      >
-        <a href="/nova-serrana" className="flex items-center">
-          Nova Serrana
+        <a href="/empreendimentos" className="flex items-center">
+          Empreendimentos
         </a>
       </Typography>
     </ul>
@@ -83,9 +72,8 @@ export function NavBar() {
   return (
     <Navbar
       className={`mx-auto font-bold py-2 px-4 lg:px-8 lg:py-6 fixed top-0 left-0 w-full   z-50 border-0 ${
-        scrolled
-          ? "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white"
-          : "bg-transparent"
+         "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white "
+        
       }`}
     >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">

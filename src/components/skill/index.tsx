@@ -33,7 +33,7 @@ const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
           </div>
         </div>
         <div className="flex flex-wrap justify-center">
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 py-8">
+          <div className="w-1/2 md:w-1/4 lg:w-1/4 py-8">
             <div className="text-center">
               <div className="relative">
                 <CircularProgressbar
@@ -47,7 +47,7 @@ const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 py-8">
+          <div className="w-1/2 md:w-1/4 lg:w-1/4 py-8">
             <div className="text-center">
               <div className="relative">
                 <CircularProgressbar
@@ -61,7 +61,7 @@ const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 py-8">
+          <div className="w-1/2 md:w-1/4 lg:w-1/4 py-8">
             <div className="text-center">
               <div className="relative">
                 <CircularProgressbar
@@ -75,7 +75,7 @@ const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 py-8">
+          <div className="w-1/2 md:w-1/4 lg:w-1/4 py-8">
             <div className="text-center">
               <div className="relative">
                 <CircularProgressbar

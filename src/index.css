@@ -270,27 +270,27 @@ p {
 
 /*BANNER*/
 
-.bg-frutal{
-  background-image: url(/BannerMobile3.webp);
+.bg-sobre{
+  background-image: url(/bannermobilesobre.webp);
   background-position: center;
   background-size: cover;
 }
 
-.bg-serrana{
-  background-image: url(/BannerMobile2.webp);
+.bg-empreendimentos{
+  background-image: url(/bannermobileempreendimentos.webp);
   background-position: center;
   background-size: cover;
 }
 
 @media (min-width:1024px){
-  .bg-frutal{
-    background-image: url(/Banner3.webp);
+  .bg-sobre{
+    background-image: url(/bannersobre.webp);
     background-position: center;
     background-size: cover;
   }
   
-  .bg-serrana{
-    background-image: url(/Banner2.webp);
+  .bg-empreendimentos{
+    background-image: url(/bannerempreendimentos.webp);
     background-position: center;
     background-size: cover;
   }

@@ -1,6 +1,8 @@
 const Page2 = () => {
   return (
     <>
+    <img src='/sobre2.webp' alt=""  />
+    <img src='/sobre3.webp' alt=""  />
     <img src='/img-about.webp' alt=""  />
       {/*<section className="relative py-16 md:py-24">
       

@@ -32,7 +32,7 @@ const HeaderCarousel = () => {
         <div
           className="h-full bg-cover bg-center text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
           style={{
-            backgroundImage: "url(/Banner1.webp)",
+            backgroundImage: "url(/bannerhome.webp)",
           }}
         >
           <div className="blind-overlay absolute top-0 left-0 w-full h-full opacity-70  flex items-center justify-center">
@@ -46,7 +46,7 @@ const HeaderCarousel = () => {
         <div
           className="h-full bg-cover bg-center text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
           style={{
-            backgroundImage: "url(/BannerMobile1.webp)",
+            backgroundImage: "url(/bannerhomemobile.webp)",
           }}
         >
           <div className="blind-overlay absolute top-0 left-0 w-full h-full opacity-70  flex items-center justify-center">
