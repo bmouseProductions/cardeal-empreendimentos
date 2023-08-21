@@ -16,7 +16,7 @@ const Skill = ({ title, ruas, terra, esgoto, pluvial }: PropsSkill) => {
   const percentagePluvial = pluvial;
 
   return (
-    <section className="bg-[url('/5.webp')] bg-cover bg-no-repeat bg-fixed bg-center relative py-10 md:py-16">
+    <section className="bg-[url('/5.webp')] bg-cover bg-no-repeat bg-fixed bg-center relative py-10 md:py-16 min-h-full">
       <div className="absolute bg-[#02050b] w-full h-full top-0 left-0 opacity-70"></div>
       <div className="px-4 md:px-16">
         <div className="relative mx-auto mb-8 text-center">
