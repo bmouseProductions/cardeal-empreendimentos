@@ -40,6 +40,8 @@ const Empreendimentos2 = ({ name }: EmpreedimentosProps) => {
     "Versol Costa",
   ];
 
+  //coment
+
   const renderDivs = () => {
     const divs = [];
     for (let i = 1; i <= numberOfDivs; i++) {
