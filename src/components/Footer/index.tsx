@@ -13,28 +13,47 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className="w-full flex px-5  flex-col bg-gradient text-white pt-10">
-      
       <div className="container  m-auto">
         <div className="flex flex-col md:flex-row lg:space-x-32">
           <div className="md:max-w-[350px] lg:w-1/5 mb-5">
-            <a >
-              <img src="/icon-cardeal.png" width={70} className="mb-3 mx-auto" />
+            <a>
+              <img
+                src="/icon-cardeal.png"
+                width={70}
+                className="mb-3 mx-auto"
+              />
             </a>
 
             <div className=" flex justify-center gap-3 mt-5 ">
-              <a href="https://www.facebook.com/empreendimentoscardeal" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a
+                href="https://www.facebook.com/empreendimentoscardeal"
+                target="_blank"
+                className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]"
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
 
-              <a href="https://www.instagram.com/empreendimentoscardeal/" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a
+                href="https://www.instagram.com/empreendimentoscardeal/"
+                target="_blank"
+                className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
 
-              <a href="" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a
+                href=""
+                target="_blank"
+                className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]"
+              >
                 <FontAwesomeIcon icon={faTiktok} />
               </a>
 
-              <a href="https://www.youtube.com/@EmpreendimentosCardeal" target="_blank" className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]">
+              <a
+                href="https://www.youtube.com/@EmpreendimentosCardeal"
+                target="_blank"
+                className="w-full max-w-[35px] flex justify-center items-center p-2 border border-white rounded-full cursor-pointer hover:bg-[#0d3e63]"
+              >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
@@ -77,8 +96,12 @@ const Footer: React.FC = () => {
                   Telefone
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
-                <a href="tel:+553438251791" className="text-sm text-white">(34) 3825-1791</a>
-                <a href="tel:+5534995440078" className="text-sm text-white">(34) 9 9544-0078</a>
+                <a href="tel:+553438251791" className="text-sm text-white">
+                  (34) 3825-1791
+                </a>
+                <a href="tel:+5534995440078" className="text-sm text-white">
+                  (34) 9 9644-0078
+                </a>
               </div>
             </div>
             <div className="md:w-2/4">
@@ -87,7 +110,12 @@ const Footer: React.FC = () => {
                   Email
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
-                <a href="mailto:flavia@empreendimentoscardeal.com.br" className="text-sm text-white">flavia@empreendimentoscardeal.com.br</a>
+                <a
+                  href="mailto:financeiro@empreendimentoscardeal.com.br"
+                  className="text-sm text-white"
+                >
+                  financeiro@empreendimentoscardeal.com.br
+                </a>
               </div>
             </div>
             <div className="md:w-2/4">
@@ -98,14 +126,15 @@ const Footer: React.FC = () => {
                 </h6>
                 <hr className="mb-4 md:hidden opacity-30" />
                 <p className="text-sm text-white ">
-                  R. João da Rocha Filgueira, 340 - Centro Patos de Minas - MG 38700-074
+                  R. João da Rocha Filgueira, 340 - Centro Patos de Minas - MG
+                  38700-074
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div className="py-7 border-t border-solid container m-auto border-white-opacity-02">
         <div className="flex justify-between">
           <div className="w-full lg:w-1/2  lg:mb-0">
