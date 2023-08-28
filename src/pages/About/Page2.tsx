@@ -38,7 +38,6 @@ const Page2 = () => {
       </section>
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl text-center font-bold mb-8">Nossa Equipe</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img
