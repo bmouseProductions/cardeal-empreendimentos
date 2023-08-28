@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
           <div className="w-full lg:w-1/2  lg:mb-0">
             <div className="text-left">
               <p className="text-sm text-white">
-                © 2020, Cardeal Empreendimentos.
+                © 2023 - Cardeal Empreendimentos - Todos os direitos reservados.
               </p>
             </div>
           </div>

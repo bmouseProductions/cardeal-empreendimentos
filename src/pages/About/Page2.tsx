@@ -41,6 +41,11 @@ const Page2 = () => {
           <h2 className="text-3xl text-center font-bold mb-8">Nossa Equipe</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <img
+                src="/Camada1.png"
+                alt="João Paulo Barbosa"
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">João Paulo Barbosa</h3>
               <p className="text-gray-600">
                 Engenheiro Civil, pós-graduado em Infraestrutura de Transportes
@@ -50,6 +55,11 @@ const Page2 = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <img
+                src="/Camada2.png"
+                alt="João Paulo Barbosa"
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">Clênio Gonçalves</h3>
               <p className="text-gray-600">
                 CEO do Grupo Patense, é reconhecido por sua visão estratégica e
@@ -58,6 +68,11 @@ const Page2 = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <img
+                src="/Camada3.png"
+                alt="João Paulo Barbosa"
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">Henrique Marques</h3>
               <p className="text-gray-600">
                 Administrador de Empresas, especializado em Gestão Empresarial e
@@ -66,6 +81,11 @@ const Page2 = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <img
+                src="/Camada4.png"
+                alt="João Paulo Barbosa"
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">Geraldo Nilson</h3>
               <p className="text-gray-600">
                 Coproprietário da GW Participações, empresa que realizou
@@ -74,6 +94,11 @@ const Page2 = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <img
+                src="/Camada5.png"
+                alt="João Paulo Barbosa"
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">Célio Wiliand</h3>
               <p className="text-gray-600">
                 Empreendedor e empresário no segmento de caça e pesca há mais de

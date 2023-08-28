@@ -6,6 +6,7 @@ import Sobre from "./pages/sobre/Sobre";
 //import Serrana from "./pages/Empreendimentos/Serrana";
 import Empreendimentos2 from "./pages/Empreendimentos/Empreendimentos2";
 import { ButtonUp } from "./components/buttonUp";
+import WhatsAppButton from "./components/whats/whats";
 
 function App() {
   return (
@@ -16,11 +17,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
 
-          <Route path="/empreendimentos" element={<Empreendimentos2 name="Empreendimentos" />} />
+          <Route
+            path="/empreendimentos"
+            element={<Empreendimentos2 name="Empreendimentos" />}
+          />
         </Routes>
         <Footer />
         <ButtonUp />
       </BrowserRouter>
+      <WhatsAppButton />
     </>
   );
 }
