@@ -9,7 +9,7 @@ const About = () => {
             <div
               className="relative w-full h-[370px] md:w-[90%] md:h-[500px]  bg-cover bg-no-repeat exp-img"
               style={{
-                backgroundImage: "url(/MONTAGEM-SATELITE-FINAL.webp)",
+                backgroundImage: "url(/imagem.webp)",
                 visibility: "visible",
               }}
             >
