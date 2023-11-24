@@ -1,15 +1,15 @@
 const About = () => {
   return (
-    <section className="relative py-32 about bg-white">
+    <section className="relative py-16 about bg-white">
       <div className="px-4 md:px-8 lg:px-32">
         {" "}
         {/* Adjust padding for different screen sizes */}
         <div className="flex flex-col md:flex-row container mx-auto">
           <div className="relative w-full md:w-1/2 mb-10 md:mb-0">
             <div
-              className="relative w-full h-[500px] md:w-[90%] md:h-[500px]  bg-cover bg-no-repeat exp-img"
+              className="relative w-full h-[370px] md:w-[90%] md:h-[500px]  bg-cover bg-no-repeat exp-img"
               style={{
-                backgroundImage: "url(/MONTAGEM-SATELITE-FINAL.webp)",
+                backgroundImage: "url(/imagem.webp)",
                 visibility: "visible",
               }}
             >
@@ -25,7 +25,7 @@ const About = () => {
               </div>
               <div className="absolute  left-20 bottom-20 font-normal">
                 <h2 className="letra">15</h2>
-                <h5 className="text-blue-900 tracking-[2px] text-xl">
+                <h5 className="text-blue-900 lg:tracking-[2px] text-xl">
                   Anos de experiência
                 </h5>
               </div>

@@ -1,30 +1,29 @@
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-interface PropsSkill{
+interface PropsSkill {
+  title: string;
   ruas: number;
   terra: number;
   esgoto: number;
   pluvial: number;
 }
 
-const Skill = ( {ruas, terra, esgoto, pluvial}:PropsSkill ) => {
-
+const Skill = ({ title, ruas, terra, esgoto, pluvial }: PropsSkill) => {
   const percentageRuas = ruas; // Set your desired percentage value here
   const percentageTerra = terra;
   const percentageEsgoto = esgoto;
   const percentagePluvial = pluvial;
-  
 
   return (
-    <section className="bg-[url('/5.webp')] bg-cover bg-no-repeat bg-fixed bg-center relative py-10 md:py-16">
+    <section className="bg-[url('/5.webp')] bg-cover bg-no-repeat bg-fixed bg-center relative py-10 md:py-16 min-h-full">
       <div className="absolute bg-[#02050b] w-full h-full top-0 left-0 opacity-70"></div>
       <div className="px-4 md:px-16">
         <div className="relative mx-auto mb-8 text-center">
           <div className="flex justify-center">
             <div className="lg:col-span-6 md:col-span-8 sm:col-span-10">
               <h6 className="text-white font-light text-base uppercase tracking-[2px] mb-3 teko">
-                Obra
+                {title}
               </h6>
               <h4 className="font-medium text-2xl md:text-4xl tracking-[1px] playfont text-white">
                 Status da Obra

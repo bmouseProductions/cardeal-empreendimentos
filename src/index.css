@@ -91,15 +91,13 @@ p {
 .letra {
   font-size: 140px;
   font-weight: 800;
-  background: url("/MONTAGEM-SATELITE-FINAL.webp") no-repeat;
+  background: url("/imagem.webp") no-repeat;
   background-position: 18% 65%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
   font-family: "Teko", sans-serif;
 }
-
-
 
 .numb {
   font-size: 60px;
@@ -270,41 +268,39 @@ p {
 
 /*BANNER*/
 
-.bg-sobre{
+.bg-sobre {
   background-image: url(/bannermobilesobre.webp);
   background-position: center;
   background-size: cover;
 }
 
-.bg-empreendimentos{
+.bg-empreendimentos {
   background-image: url(/bannermobileempreendimentos.webp);
   background-position: center;
   background-size: cover;
 }
 
-@media (min-width:1024px){
-  .bg-sobre{
+@media (min-width: 1024px) {
+  .bg-sobre {
     background-image: url(/bannersobre.webp);
     background-position: center;
     background-size: cover;
   }
-  
-  .bg-empreendimentos{
+
+  .bg-empreendimentos {
     background-image: url(/bannerempreendimentos.webp);
     background-position: center;
     background-size: cover;
   }
 }
 
-
-
-.calc-text-frutal{
+.calc-text-frutal {
   position: absolute;
   top: calc(50% - 60px);
   right: calc(50% - 65px);
 }
 
-.calc-text-serrana{
+.calc-text-serrana {
   position: absolute;
   top: calc(50% - 60px);
   right: calc(50% - 190px);

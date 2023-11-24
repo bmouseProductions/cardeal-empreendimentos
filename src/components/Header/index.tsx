@@ -30,29 +30,25 @@ const HeaderCarousel = () => {
     >
       <SwiperSlide className="hidden lg:block">
         <div
-          className="h-full bg-cover bg-center text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
+          className="h-full bg-contain bg-center bg-no-repeat text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
           style={{
-            backgroundImage: "url(/bannerhome.webp)",
+            backgroundImage: "url(/home.webp)",
           }}
         >
           <div className="blind-overlay absolute top-0 left-0 w-full h-full opacity-70  flex items-center justify-center">
-            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
-              
-            </h1>
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold"></h1>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide className="lg:hidden">
         <div
-          className="h-full bg-cover bg-center text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
+          className="h-full bg-contain bg-center bg-no-repeat text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
           style={{
-            backgroundImage: "url(/bannerhomemobile.webp)",
+            backgroundImage: "url(/beno.webp)",
           }}
         >
           <div className="blind-overlay absolute top-0 left-0 w-full h-full opacity-70  flex items-center justify-center">
-            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
-              
-            </h1>
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold"></h1>
           </div>
         </div>
       </SwiperSlide>
