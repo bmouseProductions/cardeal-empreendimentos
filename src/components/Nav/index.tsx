@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"; // Importando os ícones
+import { Link } from "react-router-dom";
 
 export function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -42,9 +43,9 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <a href="/" className="flex items-center">
+        <Link to='/'>
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -52,9 +53,9 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <a href="/sobre" className="flex items-center">
+        <Link to='/sobre'>
           Sobre
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -62,18 +63,18 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <a href="/empreendimentos" className="flex items-center">
+        
+        <Link to='/empreendimentos'>
           Empreendimentos
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
 
   return (
     <Navbar
-      className={`mx-auto font-bold py-2 px-4 lg:px-8 lg:py-6 fixed top-0 left-0 w-full   z-50 border-0 ${
-         "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white "
-        
+      className={`mx-auto font-bold py-2 px-4 lg:px-8 fixed top-0 left-0 w-full   z-50 border-0 ${
+        "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white "
       }`}
     >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
@@ -82,7 +83,7 @@ export function NavBar() {
           href="#"
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
-          <img src="/icon-cardeal.png" width={70} />
+          <img src="/icon-cardeal.png" width='70px' />
         </Typography>
 
         <div className="hidden lg:flex items-center ">

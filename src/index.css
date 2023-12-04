@@ -267,6 +267,11 @@ p {
 }
 
 /*BANNER*/
+.bg-home{
+  background-image: url(/bannerhomemobile.webp);
+  background-position: center;
+  background-size: cover;
+}
 
 .bg-sobre {
   background-image: url(/bannermobilesobre.webp);
@@ -281,6 +286,12 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .bg-home{
+    background-image: url(/bannerhome.webp);
+    background-position: center;
+    background-size: cover;
+  }
+
   .bg-sobre {
     background-image: url(/bannersobre.webp);
     background-position: center;
@@ -304,4 +315,10 @@ p {
   position: absolute;
   top: calc(50% - 60px);
   right: calc(50% - 190px);
+}
+
+
+.bg-banner{
+  background: rgb(25,53,146);
+  background: radial-gradient(circle, rgba(25,53,146,1) 0%, rgba(0,0,0,1) 88%);
 }

@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, /*SwiperSlide*/ } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -26,11 +26,12 @@ const HeaderCarousel = () => {
       modules={[Pagination, Navigation, Parallax, Autoplay]}
       parallax={true}
       mousewheel={true}
-      className="h-[100vh]" // Make the carousel full viewport height
+      className="h-[540px] w-full" // Make the carousel full viewport height
     >
+      {/*
       <SwiperSlide className="hidden lg:block">
         <div
-          className="h-full bg-contain bg-center bg-no-repeat text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
+          className="h-full bg-cover bg-center bg-no-repeat text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"
           style={{
             backgroundImage: "url(/home.webp)",
           }}
@@ -52,7 +53,7 @@ const HeaderCarousel = () => {
           </div>
         </div>
       </SwiperSlide>
-      {/*
+      
       <SwiperSlide>
         <div
           className="h-full bg-cover bg-center text-white relative flex items-center justify-center" // Adicionamos "flex items-center justify-center"

@@ -1,3 +1,6 @@
+import { FixedSizeList } from 'react-window';
+
+
 import Banner from "../../components/banner/Banner";
 import Skill from "../../components/skill";
 
@@ -7,6 +10,7 @@ interface EmpreedimentosProps {
 
 const Empreendimentos2 = ({ name }: EmpreedimentosProps) => {
   const numberOfDivs = 29; // Total de divs que você quer renderizar
+
   const sectionTitles = [
     "",
     "Residencial Gontijo",
@@ -40,36 +44,74 @@ const Empreendimentos2 = ({ name }: EmpreedimentosProps) => {
     "Versol Costa",
   ];
 
-  const renderDivs = () => {
-    const divs = [];
-    for (let i = 1; i <= numberOfDivs; i++) {
-      divs.push(
-        <div
-          key={i}
-          className="flex flex-col lg:flex-row border-b-4 border-black"
-        >
-          <div className="lg:w-1/2">
-            <img src={`/FotosCardeal(${i}).webp`} className="h-full" alt="" />
-          </div>
-          <div className="lg:w-1/2">
-            <Skill
-              title={sectionTitles[i]}
-              ruas={10}
-              terra={15}
-              esgoto={30}
-              pluvial={20}
-            />
-          </div>
-        </div>
-      );
-    }
-    return divs;
-  };
+  const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => (
+    <div style={style} className="flex flex-col lg:flex-row border-b-4 border-black">
+      <div className="lg:w-1/2">
+        <img src={`/FotosCardeal(${index + 1}).webp`} className="h-full" alt="" />
+      </div>
+      <div className="lg:w-1/2">
+        <Skill
+          title={sectionTitles[index + 1]}
+          ruas={10}
+          terra={15}
+          esgoto={30}
+          pluvial={20}
+        />
+      </div>
+    </div>
+  );
 
   return (
-    <div className="!pt-[98.5px]  lg:pt-0">
-      <Banner nome={name} bg="bg-empreendimentos" calcText="calc-text-frutal" />
-      <div>{renderDivs()}</div>
+    <div className="pt-[25px] lg:pt-0 bg-black ">
+      <Banner 
+        page= 'Empreendimentos'
+        key='Empreendimentos'
+      />
+      <FixedSizeList
+        height={800} // Defina a altura desejada da lista
+        itemCount={numberOfDivs}
+        itemSize={750} // Defina a altura de cada item
+        width="100%"
+        className='md:hidden h-screen'
+      >
+        {Row}
+      </FixedSizeList>
+      <FixedSizeList
+        height={850} // Defina a altura desejada da lista
+        itemCount={numberOfDivs}
+        itemSize={800} // Defina a altura de cada item
+        width="100%"
+        className='hidden md:block lg:hidden'
+      >
+        {Row}
+      </FixedSizeList>
+      <FixedSizeList
+        height={500} // Defina a altura desejada da lista
+        itemCount={numberOfDivs}
+        itemSize={300} // Defina a altura de cada item
+        width="100%"
+        className='hidden lg:block xl:hidden !h-screen'
+      >
+        {Row}
+      </FixedSizeList>
+      <FixedSizeList
+        height={550} // Defina a altura desejada da lista
+        itemCount={numberOfDivs}
+        itemSize={380} // Defina a altura de cada item
+        width="100%"
+        className='hidden xl:block 2xl:hidden !h-screen'
+      >
+        {Row}
+      </FixedSizeList>
+      <FixedSizeList
+        height={500} // Defina a altura desejada da lista
+        itemCount={numberOfDivs}
+        itemSize={450} // Defina a altura de cada item
+        width="100%"
+        className='hidden 2xl:block !h-screen'
+      >
+        {Row}
+      </FixedSizeList>
     </div>
   );
 };
