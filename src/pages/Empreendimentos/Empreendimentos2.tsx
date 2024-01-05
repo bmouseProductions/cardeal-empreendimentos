@@ -1,14 +1,15 @@
+import React from 'react';
 import { FixedSizeList } from 'react-window';
 
-
-import Banner from "../../components/banner/Banner";
-import Skill from "../../components/skill";
-
+//import Banner from "../../components/banner/Banner";
+import Skill from "../../components/Skill";
+import Footer from '../../components/Footer';
+/*
 interface EmpreedimentosProps {
   name: string;
-}
+}*/
 
-const Empreendimentos2 = ({ name }: EmpreedimentosProps) => {
+const Empreendimentos2 = () => {
   const numberOfDivs = 29; // Total de divs que você quer renderizar
 
   const sectionTitles = [
@@ -45,73 +46,108 @@ const Empreendimentos2 = ({ name }: EmpreedimentosProps) => {
   ];
 
   const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => (
-    <div style={style} className="flex flex-col lg:flex-row border-b-4 border-black">
-      <div className="lg:w-1/2">
-        <img src={`/FotosCardeal(${index + 1}).webp`} className="h-full" alt="" />
-      </div>
-      <div className="lg:w-1/2">
-        <Skill
-          title={sectionTitles[index + 1]}
-          ruas={10}
-          terra={15}
-          esgoto={30}
-          pluvial={20}
-        />
+    <div>
+      <div style={style} className="flex flex-col lg:flex-row justify-center border-b-4 border-black bg-[#02050b]">
+        <div className="lg:w-full 2xl:w-full max-w-[850px] ">
+          <img src={`/FotosCardeal(${index + 1}).webp`} className="h-full " alt="" />
+        </div>
+        <div className=" bg-[#02050b] opacity-70">
+          <div className='lg:w-full 2xl:w-full'>
+            <Skill
+            title={sectionTitles[index + 1]}
+            ruas={10}
+            terra={15}
+            esgoto={30}
+            pluvial={20}
+          />
+          </div>
+          
+        </div>
       </div>
     </div>
   );
+  
 
   return (
-    <div className="pt-[25px] lg:pt-0 bg-black ">
-      <Banner 
+    <div className=" bg-black overflow-auto ">
+      {/*<Banner 
         page= 'Empreendimentos'
         key='Empreendimentos'
-      />
-      <FixedSizeList
-        height={800} // Defina a altura desejada da lista
-        itemCount={numberOfDivs}
-        itemSize={750} // Defina a altura de cada item
-        width="100%"
-        className='md:hidden h-screen'
-      >
-        {Row}
-      </FixedSizeList>
-      <FixedSizeList
-        height={850} // Defina a altura desejada da lista
-        itemCount={numberOfDivs}
-        itemSize={800} // Defina a altura de cada item
-        width="100%"
-        className='hidden md:block lg:hidden'
-      >
-        {Row}
-      </FixedSizeList>
-      <FixedSizeList
-        height={500} // Defina a altura desejada da lista
-        itemCount={numberOfDivs}
-        itemSize={300} // Defina a altura de cada item
-        width="100%"
-        className='hidden lg:block xl:hidden !h-screen'
-      >
-        {Row}
-      </FixedSizeList>
-      <FixedSizeList
-        height={550} // Defina a altura desejada da lista
-        itemCount={numberOfDivs}
-        itemSize={380} // Defina a altura de cada item
-        width="100%"
-        className='hidden xl:block 2xl:hidden !h-screen'
-      >
-        {Row}
-      </FixedSizeList>
-      <FixedSizeList
-        height={500} // Defina a altura desejada da lista
-        itemCount={numberOfDivs}
-        itemSize={450} // Defina a altura de cada item
-        width="100%"
-        className='hidden 2xl:block !h-screen'
-      >
-        {Row}
-      </FixedSizeList>
+  /> */}
+      
+      <div className='md:hidden'>
+        <FixedSizeList
+          height={800} // Defina a altura desejada da lista
+          itemCount={numberOfDivs}
+          itemSize={750} // Defina a altura de cada item
+          width="100%"
+          className=' h-screen'
+        >
+          {Row}
+        </FixedSizeList>
+
+        <Footer />
+      </div>
+      
+      <div className='hidden md:block lg:hidden'>
+        <FixedSizeList
+          height={850} // Defina a altura desejada da lista
+          itemCount={numberOfDivs}
+          itemSize={800} // Defina a altura de cada item
+          width="100%"
+          className=''
+        >
+          {Row}
+        </FixedSizeList>
+
+        <Footer />
+      </div>
+      
+      <div className='hidden lg:block xl:hidden'>
+        <FixedSizeList
+          height={500} // Defina a altura desejada da lista
+          itemCount={numberOfDivs}
+          itemSize={300} // Defina a altura de cada item
+          width="100%"
+          className=' !h-screen'
+        >
+          {Row}
+        </FixedSizeList>
+
+        <Footer />
+      </div>
+
+      <div className='hidden xl:block 2xl:hidden'>
+        <FixedSizeList
+          height={550} // Defina a altura desejada da lista
+          itemCount={numberOfDivs}
+          itemSize={380} // Defina a altura de cada item
+          width="100%"
+          className=' !h-screen'
+        >
+          {Row}
+        </FixedSizeList>
+
+        <Footer />
+      </div>
+      
+      <div className='hidden 2xl:block'>
+        <div>
+          <FixedSizeList
+            height={450} // Defina a altura desejada da lista
+            itemCount={numberOfDivs}
+            itemSize={450} // Defina a altura de cada item
+            width="100%"
+            className='!h-screen overflow-auto'
+          >
+            {Row}
+          </FixedSizeList>
+          
+        </div>
+
+        
+        
+      </div>
     </div>
   );
 };

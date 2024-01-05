@@ -36,7 +36,13 @@ export function NavBar() {
   // }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex   flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+    <ul 
+      className={
+        openNav ? ('mb-4 mt-2 flex !h-full flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6') :
+        ('mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6')
+      }
+    
+    >
       <Typography
         as="li"
         variant="bold"
@@ -68,26 +74,47 @@ export function NavBar() {
           Empreendimentos
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        variant="bold"
+        color="blue-gray"
+        className="p-1 text-xl"
+      >
+        
+        <Link to='/contato'>
+          Contato
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="bold"
+        color="blue-gray"
+        className="p-1 text-xl"
+      >
+        
+        <Link to='/seja-um-parceiro'>
+          Seja um parceiro
+        </Link>
+      </Typography>
     </ul>
   );
 
   return (
     <Navbar
-      className={`mx-auto font-bold py-2 px-4 lg:px-8 fixed top-0 left-0 w-full   z-50 border-0 ${
-        "bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white "
-      }`}
+      className={
+      openNav ? ('mx-auto py-2 px-4 lg:px-8 fixed top-0 left-0 w-full h-full z-50 border-0 font-bold bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white') : 
+      ('mx-auto py-2 px-4 lg:px-8 fixed top-0 left-0 w-full z-50 border-0 font-bold bg-[#1b3aa0] bg-opacity-80 backdrop-blur-md border-rounded transition-all duration-300  text-white')
+    }
     >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
-        >
+        <Link to='/'>
           <img src="/icon-cardeal.png" width='70px' />
-        </Typography>
+        </Link>
 
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
+
+          {/* REDES SOCIAIS*/}
           <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
             <a href="https://www.facebook.com/empreendimentoscardeal" target="_blank">
               <FaFacebook className="text-white text-2xl " />
@@ -109,6 +136,7 @@ export function NavBar() {
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
+            //ICON HAMBURGUER MENU
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -124,6 +152,7 @@ export function NavBar() {
               />
             </svg>
           ) : (
+            //ICON X MENU
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -140,6 +169,8 @@ export function NavBar() {
           )}
         </IconButton>
       </div>
+
+      {/* MENU MOBILE */}
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}

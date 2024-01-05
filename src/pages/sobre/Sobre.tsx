@@ -1,6 +1,7 @@
 //import HeaderCarousel from "../../components/Header";
+import Footer from "../../components/Footer";
 import About from "../../components/about";
-import Banner from "../../components/banner/Banner";
+import Banner from "../../components/Banner/Banner";
 import Page2 from "../About/Page2";
 
 const Sobre = () => {
@@ -11,6 +12,7 @@ const Sobre = () => {
       />
       <About />
       <Page2 />
+      <Footer />
     </div>
   );
 };

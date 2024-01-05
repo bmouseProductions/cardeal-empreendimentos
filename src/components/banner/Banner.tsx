@@ -9,7 +9,7 @@ interface PropsBanner {
 
 export default function Banner( { page }:PropsBanner ){
     return (
-        <section className="w-full min-h-screen lg:min-h-[530px] pt-14 bg-banner relative">
+        <section className="w-full min-h-screen lg:min-h-[530px]  bg-banner relative">
             <div className='flex flex-col-reverse items-center lg:flex-row lg:min-h-screen lg:gap-10'>
                 <div className='lg:w-1/2 h-full lg:min-h-[530px] flex flex-col justify-end items-center'>
 

@@ -12,6 +12,8 @@
 html {
   scrollbar-color: #ffffff, #193592;
   scrollbar-width: thin;
+  padding-top: 86px;
+  background-color: #000;
 }
 ::-webkit-scrollbar-track {
   /*  background: linear-gradient(360deg, #000, #ad290c); */

@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section className="relative py-16 about bg-white">
-      <div className="px-4 md:px-8 lg:px-32">
+      <div className="px-4 md:px-8 2xl:px-32">
         {" "}
         {/* Adjust padding for different screen sizes */}
         <div className="flex flex-col md:flex-row container mx-auto">
@@ -51,34 +51,46 @@ const About = () => {
                 excepcional e preços justos para nossos clientes, parceiros e
                 comunidade.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 md:mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-5">
+            <div className="relative">
+              <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
+              <h3 className="mb-2 text-2xl md:text-4xl">
+                <span className="text-5xl text-blue-900 font-bold">
+                  +30
+                </span>
+                <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
+                  Empreendimentos <br />
+                  executados
+                </h6>
+              </h3>
+            </div>
 
-              <div className="mt-8 md:mt-12">
-                <div className="grid  grid-cols-2 gap-8 md:gap-16">
-                  <div className="relative">
-                    <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
-                    <h3 className="mb-2 text-2xl md:text-4xl">
-                      <span className="text-4xl md:text-6xl text-blue-900 font-bold">
-                        +30
-                      </span>
-                      <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
-                        Empreendimentos <br />
-                        executados
-                      </h6>
-                    </h3>
-                  </div>
-                  <div className="relative">
-                    <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
-                    <h3 className="mb-2 text-2xl md:text-4xl">
-                      <span className="text-4xl md:text-6xl text-blue-900  font-bold">
-                        + 50 mil
-                      </span>
-                      <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
-                        vidas transformadas
-                      </h6>
-                    </h3>
-                  </div>
-                </div>
-              </div>
+            <div className="relative">
+              <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
+              <h3 className="mb-2 text-2xl md:text-4xl">
+                <span className="text-4xl md:text-3xl text-blue-900 font-bold">
+                  FINANCIAMENTO
+                </span>
+                <h6 className="text-sm font-medium uppercase tracking-[2px] ">
+                  próprio e facilitado
+                </h6>
+              </h3>
+            </div>
+            
+            <div className="relative">
+              <div className="absolute right-[20%] -z-10 w-0 h-0 border-x-[35px] border-r-[#f7f7f7] bottom-9 border-solid"></div>
+              <h3 className="mb-2 text-2xl md:text-4xl">
+                <span className="text-5xl text-blue-900  font-bold">
+                  + 50 mil
+                </span>
+                <h6 className="text-xs md:text-sm font-medium uppercase tracking-[2px]">
+                  vidas transformadas
+                </h6>
+              </h3>
             </div>
           </div>
         </div>

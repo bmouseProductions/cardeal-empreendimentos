@@ -1,6 +1,6 @@
-import Banner from "../../components/banner/Banner";
+import Banner from "../../components/Banner/Banner";
 /* import Skill from "../../components/skill"; */
-import SliderSerrana from "../../components/sliders/SliderSerrana";
+import SliderSerrana from "../../components/Sliders/SliderSerrana";
 
 //import frutal from "../../../public/MONTAGEM-001.WEBP"
 

@@ -1,6 +1,6 @@
-import Banner from "../../components/banner/Banner";
+import Banner from "../../components/Banner/Banner";
 /* import Skill from "../../components/skill"; */
-import SliderFrutal from "../../components/sliders/SliderFrutal";
+import SliderFrutal from "../../components/Sliders/SliderFrutal";
 
 interface EmpreedimentosProps {
   name: string;
