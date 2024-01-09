@@ -3,7 +3,6 @@ import { FixedSizeList } from 'react-window';
 
 //import Banner from "../../components/banner/Banner";
 import Skill from "../../components/Skill";
-import Footer from '../../components/Footer';
 /*
 interface EmpreedimentosProps {
   name: string;
@@ -85,8 +84,6 @@ const Empreendimentos2 = () => {
         >
           {Row}
         </FixedSizeList>
-
-        <Footer />
       </div>
       
       <div className='hidden md:block lg:hidden'>
@@ -99,8 +96,6 @@ const Empreendimentos2 = () => {
         >
           {Row}
         </FixedSizeList>
-
-        <Footer />
       </div>
       
       <div className='hidden lg:block xl:hidden'>
@@ -113,8 +108,6 @@ const Empreendimentos2 = () => {
         >
           {Row}
         </FixedSizeList>
-
-        <Footer />
       </div>
 
       <div className='hidden xl:block 2xl:hidden'>
@@ -127,8 +120,6 @@ const Empreendimentos2 = () => {
         >
           {Row}
         </FixedSizeList>
-
-        <Footer />
       </div>
       
       <div className='hidden 2xl:block'>
@@ -142,11 +133,7 @@ const Empreendimentos2 = () => {
           >
             {Row}
           </FixedSizeList>
-          
         </div>
-
-        
-        
       </div>
     </div>
   );

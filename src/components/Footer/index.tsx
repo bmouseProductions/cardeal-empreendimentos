@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="w-full flex px-5  flex-col bg-gradient text-white pt-10">
       <div className="container  m-auto">
-        <div className="flex flex-col lg:flex-row lg:space-x-32">
+        <div className="flex flex-col lg:flex-row lg:space-x-14">
           <div className="lg:max-w-[350px] lg:w-1/5 mb-5">
             <a>
               <img
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
             </div> */}
-            <div className="lg:w-2/4">
+            <div className="lg:w-[30%] ">
               <div className="mb-8 flex flex-col gap-2">
                 <h6 className="text-white font-bold text-lg uppercase tracking-[2px] mb-1">
                   Telefone
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="lg:w-2/4">
+            <div className="lg:w-1/3 xl:mr-10 2xl:mr-0">
               <div className="mb-8 flex flex-col gap-2">
                 <h6 className="text-white font-bold text-lg uppercase tracking-[2px] mb-1">
                   Email
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="lg:w-2/4">
+            <div className="lg:w-1/3">
               <div className="mb-8 flex flex-col gap-2">
                 <h6 className="relative text-white font-bold text-lg uppercase tracking-[2px] mb-1">
                   Visite

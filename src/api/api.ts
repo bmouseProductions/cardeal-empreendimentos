@@ -10,13 +10,14 @@ interface propsFormData {
     email: string;
     estado: string;
     cidade: string;
-    emailMarketing: boolean; 
+    descricao:string;
+    politica: boolean; 
 }
 
 
 
 export const enviarEmail = async (formData: propsFormData) => {
-    const {nome, telefone, email, estado, cidade, emailMarketing} = formData;
+    const {nome, telefone, email, estado, cidade, descricao, politica} = formData;
 
     const dataToSend = {
         nome,
@@ -24,13 +25,14 @@ export const enviarEmail = async (formData: propsFormData) => {
         email,
         estado,
         cidade,
-        emailMarketing
+        descricao,
+        politica
     }
     try{
         const response = await api.post("/send", dataToSend)
         return response.data
-    } catch (error: any) {
-        throw new Error("Erro" + error.message)
+    } catch (error) {
+        throw new Error("Erro" + error)
     }
 
 }

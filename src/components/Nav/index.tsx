@@ -34,6 +34,12 @@ export function NavBar() {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
+  
+  function fecharMenu(){
+    if (openNav === true){
+      setOpenNav(false)
+    }
+  }
 
   const navList = (
     <ul 
@@ -49,7 +55,7 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <Link to='/'>
+        <Link to='/' onClick={fecharMenu}>
           Home
         </Link>
       </Typography>
@@ -59,7 +65,7 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 text-xl"
       >
-        <Link to='/sobre'>
+        <Link to='/sobre' onClick={fecharMenu}>
           Sobre
         </Link>
       </Typography>
@@ -70,7 +76,7 @@ export function NavBar() {
         className="p-1 text-xl"
       >
         
-        <Link to='/empreendimentos'>
+        <Link to='/empreendimentos' onClick={fecharMenu}>
           Empreendimentos
         </Link>
       </Typography>
@@ -81,7 +87,7 @@ export function NavBar() {
         className="p-1 text-xl"
       >
         
-        <Link to='/contato'>
+        <Link to='/contato' onClick={fecharMenu}>
           Contato
         </Link>
       </Typography>
@@ -92,7 +98,7 @@ export function NavBar() {
         className="p-1 text-xl"
       >
         
-        <Link to='/seja-um-parceiro'>
+        <Link to='/seja-um-parceiro' onClick={fecharMenu}>
           Seja um parceiro
         </Link>
       </Typography>

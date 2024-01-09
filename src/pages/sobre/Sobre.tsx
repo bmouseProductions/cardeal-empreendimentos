@@ -6,7 +6,7 @@ import Page2 from "../About/Page2";
 
 const Sobre = () => {
   return (
-    <div className="bg-gray-300 pt-[25px] lg:pt-0 ">
+    <div className="bg-gray-300 ">
       <Banner
         page="Sobre"
       />

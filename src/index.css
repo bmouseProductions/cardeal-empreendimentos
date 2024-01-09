@@ -307,6 +307,11 @@ p {
   }
 }
 
+.bg-construcao{
+  background-image: url(/setor-da-construcao-civil.webp);
+  background-position: top;
+}
+
 .calc-text-frutal {
   position: absolute;
   top: calc(50% - 60px);

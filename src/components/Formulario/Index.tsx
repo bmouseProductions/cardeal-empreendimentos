@@ -61,7 +61,7 @@ const EstadosDinamicos = () => {
         value={selectedEstado}
         onChange={handleEstadoChange}
         id="estado"
-        className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
+        className="mb-5 w-[100%]  h-[50px] max-w-[500px] bg-gray-200  rounded text-black px-2"
       >
         <option value="">Selecione um estado</option>
         {estados.map((estado) => (
@@ -76,7 +76,7 @@ const EstadosDinamicos = () => {
         value={selectedEstado}
         onChange={() => {}}
         id="cidade"
-        className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
+        className="mb-5 w-[100%]  h-[50px] max-w-[500px] bg-gray-200  rounded text-black px-2"
       >
         <option value="">Selecione uma cidade</option>
         {cidades.map((cidade) => (
@@ -93,10 +93,15 @@ interface FormData {
   email: string;
   estado: string;
   cidade: string;
-  emailMarketing: boolean;
+  descricao:string;
+  politica: boolean;
 }
 
-export const Formulario = () => {
+interface PropsFormulario{
+  placeTextArea: string;
+}
+
+export default function Formulario({placeTextArea}:PropsFormulario) {
 
   const [formData, setFormData] = useState<FormData>({
     nome: "",
@@ -104,7 +109,8 @@ export const Formulario = () => {
     telefone: "",
     estado: "",
     cidade: "",
-    emailMarketing: false,
+    descricao:"",
+    politica: false,
   });
 
   const [isSending, setIsSending] = useState(false);
@@ -114,6 +120,14 @@ export const Formulario = () => {
     setFormData((prevData) => ({
       ...prevData,
       [id]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleChangeText = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
     }));
   };
 
@@ -137,7 +151,7 @@ export const Formulario = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full sm:w-auto flex flex-col">
+    <form onSubmit={handleSubmit} className="w-auto flex flex-col mx-auto">
       
       <input
         placeholder="Nome"
@@ -147,7 +161,7 @@ export const Formulario = () => {
         onChange={handleChange}
         value={formData.nome}
         required
-        className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
+        className="mb-5 w-[100%]  h-[50px] max-w-[500px] bg-gray-200  rounded text-black px-2"
       />
 
       
@@ -159,7 +173,7 @@ export const Formulario = () => {
         value={formData.email}
         onChange={handleChange}
         required
-        className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
+        className="mb-5 w-[100%]  h-[50px] max-w-[500px] bg-gray-200  rounded text-black px-2"
       />
 
       <input
@@ -170,14 +184,25 @@ export const Formulario = () => {
         value={formData.telefone}
         onChange={handleChange}
         required
-        className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
+        className="mb-5 w-[100%]  h-[50px] max-w-[500px] bg-gray-200  rounded text-black px-2"
       />
 
       <EstadosDinamicos />
 
+      <textarea
+        placeholder={placeTextArea}
+        rows={5}
+        id="descricao"
+        name="descricao"
+        value={formData.descricao}
+        onChange={handleChangeText}
+        required
+        className="mb-5 w-[100%] max-w-[500px] bg-gray-200 rounded text-black px-2"
+      />
+
       <div className="flex gap-3 mb-5 w-[100%] ">
-        <input className="w-4" type="checkbox"  required name="termos politica de privacidade" id="privacidade" />
-        <label htmlFor="privacidade">Aceito a <a className="text-blue-600 underline" href="https://olharcerto.com.br/politica-de-privacidade/" target="_blank">política de privacidade</a>.</label>
+        <input className="w-4" type="checkbox"  required name="termos politica de privacidade" id="politica" />
+        <label htmlFor="politica">Aceito a <a className="text-blue-600 underline" href="https://olharcerto.com.br/politica-de-privacidade/" target="_blank">política de privacidade</a>.</label>
       </div>
       
     
@@ -185,7 +210,7 @@ export const Formulario = () => {
       <button
         type="submit"
         id="styleButton"
-        className="max-w-[600px] bg-purple-700"
+        className="py-3 max-w-[500px] text-white font-semibold bg-[#193592] rounded"
         disabled={isSending}
       >
         Eu quero me credenciar
@@ -193,4 +218,4 @@ export const Formulario = () => {
       
     </form>
   );
-};
+}

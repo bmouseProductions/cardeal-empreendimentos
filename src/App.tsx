@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/Nav";
 import Home from "./pages/Home/Home";
 //import Footer from "./components/Footer";
-import Sobre from "./pages/sobre/Sobre";
+import Sobre from "./pages/Sobre/Sobre";
 import Empreendimentos2 from "./pages/Empreendimentos/Empreendimentos2";
 import { ButtonUp } from "./components/ButtonUp";
 import WhatsAppButton from "./components/whats/whats";

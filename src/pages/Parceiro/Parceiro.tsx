@@ -1,39 +1,47 @@
-import { Formulario } from "../../components/Formulario/Index";
+import Footer from "../../components/Footer";
+import Formulario from "../../components/Formulario/Index";
 
 
 export default function Parceiro(){
     return (
-        <section className=" bg-white">
-            <div className="container px-4 nd:px-8 lg:px-16 xl:px-32 bg-blue-700 bg-opacity-75">
-                <div className="py-14 ">
-                    <h1 className="text-6xl text-white">
-                        SEJA NOSSO <br />
-                        <strong>PARCEIRO</strong>  
-                    </h1>
-                </div>
-            </div>
-
-            <div className="container py-10 px-4 nd:px-8 lg:px-16 2xl:px-32 flex ">
-                <div className="lg:w-1/2">
-                    <div>
-                        <h2 className="text-[40px] font-bold">
-                            <span className="text-[60px] font-bold text-blue-700 ">PARCERIA COM</span><br />
-                            SUCESSO GARANTIDO
-                        </h2>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h2 className="text-3xl">Seja nosso Parceiro</h2>
-                        <p className="text-[18px] ">PREENCHA OS DADOS ABAIXO COM AS INFORMAÇÕES DO SEU IMÓVEL.</p>
-
+        <>
+            <section className=" bg-white">
+                <div className="bg-construcao ">
+                    <div className=" bg-blue-700 bg-opacity-75">
+                        <div className="container py-14 px-4 md:px-8 lg:px-16 mx-auto">
+                            <h1 className="text-5xl md:text-6xl text-white">
+                                SEJA NOSSO <br />
+                                <strong>PARCEIRO</strong>  
+                            </h1>
+                        </div>
                     </div>
                 </div>
 
-                <div className="">
-                    <Formulario/>
+                <div className="container py-10 px-4 md:px-8 lg:px-16 mx-auto flex flex-col lg:flex-row lg:gap-10 ">
+                    <div className="lg:w-[45%] ">
+                        <div>
+                            <h2 className="text-2xl md:text-5xl font-bold">
+                                <span className="text-[40px] md:text-6xl font-bold text-blue-700 ">PARCERIA COM</span><br />
+                                SUCESSO GARANTIDO
+                            </h2>
+                            <p className="mt-2">
+                                Como se pôde constatar, o modelo de negócios praticado pelo Grupo Estrutural é garantia de sucesso para todos os envolvidos. É pelo desenvolvimento de espaços urbanos bem planejados, respeitosos com o meio ambiente e sustentados pela solidez e segurança de uma incorporadora imobiliária de porte é que se promove a valorização de imóveis e a realização plena dos sonhos de cada cliente.
+                            </p>
+                        </div>
+                        <div className="mt-5 md:mt-10">
+                            <h2 className="text-3xl md:text-4xl">Seja nosso Parceiro</h2>
+                            <p className="text-[18px] ">PREENCHA OS DADOS ABAIXO COM AS INFORMAÇÕES DO SEU IMÓVEL.</p>
+
+                        </div>
+                    </div>
+
+                    <div className="lg:w-[55%] ">
+                        <Formulario placeTextArea="Descrição do seu terreno"/>
+                    </div>
+                    
                 </div>
-                
-            </div>
-        </section>
+            </section>
+            <Footer/>
+        </>
     )
 }
