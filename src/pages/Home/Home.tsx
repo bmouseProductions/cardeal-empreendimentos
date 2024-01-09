@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <div className="pt-[25px] lg:pt-0 bg-black ">
-      <Banner page=""/>
+      <Banner/>
       <About />
       <Testimonials />
       <SectionJV />
