@@ -1,7 +1,7 @@
 const Testimonials = () => {
   return (
     <section className="py-10 sm:py-20 md:py-24 2xl:py-32 bg-gradient-to-l from-blue-800 to-black">
-      <div className="px-4 md:px-8 lg:px-16 xl:px-32">
+      <div className="container  mx-auto px-4 md:px-8 lg:px-16 xl:px-32">
         <div className="text-center mb-10">
           <h6 className="text-white font-light text-sm md:text-base lg:text-lg uppercase tracking-[2px] teko">
           O QUE 

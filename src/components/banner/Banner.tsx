@@ -13,13 +13,13 @@ export default function Banner(){
                 <div className='flex flex-col items-center lg:flex-row lg:min-h-screen lg:gap-10'>
                     <div className='lg:w-1/2 h-full lg:min-h-[530px] flex flex-col  items-center'>
 
-                        <img src={logo} className='w-full max-w-[300px] xl:max-w-[550px] mt-5 lg:mt-16' alt="" />
+                        <img src={logo} className='w-full max-w-[300px] md:max-w-[400px] xl:max-w-[550px] mt-5 lg:mt-16' alt="" />
                         
                     </div>
 
-                    <div className='lg:w-1/2 px-5 flex flex-col items-center'>
-                        <h1 className='mt-10 mb-14 text-xl font-semibold text-center text-white'>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. sit amet, consectetur adipisicing elit. sit amet, consectetur adipisicing elit.
+                    <div className='lg:w-1/2 px-5  2xl:px-20 flex flex-col items-center'>
+                        <h1 className='mt-10 mb-14 text-xl md:text-3xl font-semibold text-center text-white'>
+                        Comece o seu futuro em um dos nossos loteamentos. O empreendimento certo para você está aqui.
                         </h1>
                         <a 
                             href="https://wa.me/5534996440078?text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+receber+algumas+informa%C3%A7%C3%B5es."

@@ -12,7 +12,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full flex px-5  flex-col bg-gradient text-white pt-10">
+    <footer className="w-full flex px-5  flex-col bg-gradient-to-l from-blue-800 to-black text-white pt-10">
       <div className="container  m-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-14">
           <div className="lg:max-w-[350px] lg:w-1/5 mb-5">

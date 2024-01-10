@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
     <section className="py-10 sm:py-20 md:py-24 lg:py-28 bg-[#f8f4f3]">
-      <div className="px-4 md:px-8 lg:px-16 2xl:px-32">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 2xl:px-32">
         <div className="text-center mb-10">
           <h6 className="text-blue-800 font-light text-sm md:text-base lg:text-lg uppercase tracking-[2px] teko">
             Nossos pontos fortes
