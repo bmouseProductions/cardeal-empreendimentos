@@ -1,6 +1,6 @@
 import Lottie  from 'react-lottie-player';
 
-import logo from '/logo-cardeal-branco.webp'
+const logo: string = '/logo-cardeal-branco.webp'
 import swipeUp from '../../assets/swipeUp.json'
 import { FaWhatsapp } from "react-icons/fa";
 

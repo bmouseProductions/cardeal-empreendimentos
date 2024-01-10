@@ -1,4 +1,4 @@
-import loteamento from '/loteamento.webp'
+const loteamento: string = '/loteamento.webp';
 
 export const SectionJV = () => {
   return (
