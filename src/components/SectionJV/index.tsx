@@ -50,7 +50,7 @@ export const SectionJV = () => {
           </div>
           <div className="flex flex-col gap-5">
             <li>
-              <strong>6.</strong> Estamos comprometidos em oferecer empreendimnetos que estejam
+              <strong>6.</strong> Estamos comprometidos em oferecer empreendimentos que estejam
               em harmonia com a natureza e proporcionem qualidade de vida
               superior aos nossos clientes
             </li>

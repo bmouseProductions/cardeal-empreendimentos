@@ -25,11 +25,11 @@ export default function Parceiro(){
                                 SUCESSO GARANTIDO
                             </h2>
                             <p className="mt-2">
-                                Como se pôde constatar, o modelo de negócios praticado pelo Grupo Estrutural é garantia de sucesso para todos os envolvidos. É pelo desenvolvimento de espaços urbanos bem planejados, respeitosos com o meio ambiente e sustentados pela solidez e segurança de uma incorporadora imobiliária de porte é que se promove a valorização de imóveis e a realização plena dos sonhos de cada cliente.
+                            O modelo de negócios adotado pela Cardeal Empreendimentos é garantia de sucesso para todos os envolvidos. É através do desenvolvimento de espaços urbanos cuidadosamente planejados, com compromisso ambiental e sustentados pela solidez e segurança de uma incorporadora imobiliária de grande porte, que promovemos a valorização de imóveis e a realização plena dos sonhos de cada cliente.
                             </p>
                         </div>
                         <div className="mt-5 md:mt-10">
-                            <h2 className="text-3xl md:text-4xl">Seja nosso Parceiro</h2>
+                            <h2 className="text-3xl md:text-4xl">Seja nosso parceiro</h2>
                             <p className="text-[18px] ">PREENCHA OS DADOS ABAIXO COM AS INFORMAÇÕES DO SEU IMÓVEL.</p>
 
                         </div>

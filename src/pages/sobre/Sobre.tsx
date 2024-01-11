@@ -2,7 +2,7 @@
 import Footer from "../../components/Footer";
 import About from "../../components/about";
 //import Banner from "../../components/Banner/Banner";
-import Page2 from "../About/Page2";
+import Institucional from "../../components/Institucional/Institucional";
 
 const Sobre = () => {
   return (
@@ -12,7 +12,7 @@ const Sobre = () => {
         page="Sobre"
       />*/}
       <About />
-      <Page2 />
+      <Institucional />
       <Footer />
     </div>
   );

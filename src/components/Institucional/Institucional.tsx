@@ -1,4 +1,4 @@
-const Page2 = () => {
+const Institucional = () => {
   return (
     <>
       <section className=" text-white py-16">
@@ -18,19 +18,19 @@ const Page2 = () => {
               <p className="text-gray-300">
                 Ser reconhecidos nacionalmente como uma empresa comprometida com
                 a excelência, transparência e responsabilidade social.
-                Contribuímos para um futuro próspero através de uma abordagem
+                Contribuir para um futuro próspero através de uma abordagem
                 ética e transparente em nossos empreendimentos.
               </p>
             </div>
             <div className="bg-blue-700 p-8 rounded-lg shadow-md md:flex-1">
               <h2 className="text-2xl font-bold mb-4">Nossos Valores</h2>
               <ul className="text-gray-300 list-disc list-inside">
-                <li>Responsabilidade Social</li>
-                <li>Segurança e Comprometimento</li>
-                <li>Inovação e Qualidade</li>
-                <li>Integridade e Transparência</li>
-                <li>Exclusividade e Qualidade</li>
-                <li>Desenvolvimento dos Colaboradores</li>
+                <li>Responsabilidade Social;</li>
+                <li>Segurança e Comprometimento;</li>
+                <li>Inovação e Qualidade;</li>
+                <li>Integridade e Transparência;</li>
+                <li>Exclusividade;</li>
+                <li>Desenvolvimento dos Colaboradores;</li>
               </ul>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Page2 = () => {
               <h3 className="text-xl font-semibold mb-2">Célio Wiliand</h3>
               <p className="text-gray-600">
                 Empreendedor e empresário no segmento de caça e pesca há mais de
-                20 anos. Coproprietário da GW Panici, Dacota e Souro é Téla.
+                20 anos. Coproprietário da GW Panici, Dacota e Souro e Téla.
                 Sempre inovando em seus empreendimentos.
               </p>
             </div>
@@ -112,4 +112,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default Institucional;

@@ -18,27 +18,20 @@ export function NavBar() {
     );
   }, []);
 
-  // const [scrolled, setScrolled] = useState(false);
-
-  // const handleScroll = () => {
-  //   if (window.scrollY > 0) {
-  //     setScrolled(true);
-  //   } else {
-  //     setScrolled(false);
-  //   }
-  // // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // O uso de "smooth" proporciona uma animação suave, mas você pode optar por "auto" para um comportamento mais rápido.
+    });
+  };
   
   function fecharMenu(){
     if (openNav === true){
       setOpenNav(false)
     }
+
+    scrollToTop()
   }
 
   const navList = (

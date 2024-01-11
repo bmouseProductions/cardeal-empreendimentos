@@ -334,3 +334,6 @@ p {
   background-image: url(/bannerBG.png);
   background-size: cover;
 }
+.funcionaPORRA{
+  text-wrap: wrap;
+}
