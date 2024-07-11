@@ -57,7 +57,7 @@ export default function Contato(){
                     </div>
 
                     <div className="w-full mt-5 md:mt-10">
-                        <Formulario placeTextArea="Mensagem"/>
+                        <Formulario placeTextArea="Mensagem" assunto="Contato via site"/>
                     </div>
                     
                 </div>

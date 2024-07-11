@@ -36,7 +36,7 @@ export default function Parceiro(){
                     </div>
 
                     <div className="lg:w-[55%] ">
-                        <Formulario placeTextArea="Descrição do seu terreno"/>
+                        <Formulario placeTextArea="Descrição do seu terreno" assunto="Gostaria de me tornar um parceiro"/>
                     </div>
                     
                 </div>

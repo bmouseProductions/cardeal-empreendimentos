@@ -1,35 +1,35 @@
 import axios from "axios"
 
 export const api = axios.create({
-    baseURL: "https://backend-olhar-certo.onrender.com"
+    baseURL: "http://localhost:8000"
 })
 
 interface propsFormData {
+    assunto: string;
     nome: string;
-    telefone: string;
     email: string;
+    telefone: string;
     estado: string;
     cidade: string;
     descricao:string;
     politica: boolean; 
 }
 
-
-
 export const enviarEmail = async (formData: propsFormData) => {
-    const {nome, telefone, email, estado, cidade, descricao, politica} = formData;
+    const {assunto, nome, email, telefone, estado, cidade, descricao, politica} = formData;
 
     const dataToSend = {
+        assunto,
         nome,
-        telefone,
         email,
+        telefone,
         estado,
         cidade,
         descricao,
         politica
     }
     try{
-        const response = await api.post("/send", dataToSend)
+        const response = await api.post("/send-email", dataToSend)
         return response.data
     } catch (error) {
         throw new Error("Erro" + error)
