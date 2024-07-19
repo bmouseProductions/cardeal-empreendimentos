@@ -116,13 +116,6 @@ export default function Privacidade() {
                             entre em contato conosco:
                         </p>
                     </div>
-
-                    Cardeal Empreendimentos
-                    Endereço: [Inserir endereço]
-                    E-mail: [Inserir e-mail de contato]
-                    Telefone: [Inserir número de telefone]
-
-                    Esta Política de Privacidade foi atualizada em [Inserir data de atualização].
                 </div>
             </div>
         </div>
