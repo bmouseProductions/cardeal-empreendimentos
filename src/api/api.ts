@@ -30,6 +30,11 @@ export const enviarEmail = async (formData: propsFormData) => {
     }
     try{
         const response = await api.post("/send-email", dataToSend)
+        if (response.status === 200) {
+            window.alert("Email enviado com sucesso!");
+        } else {
+            window.alert("Falha ao enviar o email. Por favor, tente novamente.");
+        }
         return response.data
     } catch (error) {
         throw new Error("Erro" + error)

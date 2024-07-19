@@ -6,6 +6,7 @@ import Empreendimentos2 from "./pages/Empreendimentos/Empreendimentos";
 
 import Parceiro from "./pages/Parceiro/Parceiro";
 import Contato from "./pages/Contato/Contato";
+import Privacidade from "./pages/Privacidade/Privacidade";
 
 export default function AppRoutes(){
     return (
@@ -21,6 +22,7 @@ export default function AppRoutes(){
                     />
                     <Route path="/contato" element={<Contato />} />
                     <Route path="/seja-um-parceiro" element={<Parceiro />} />
+                    <Route path="/privacidade" element={<Privacidade />} />
                 </Routes>
             </BrowserRouter>
         </>

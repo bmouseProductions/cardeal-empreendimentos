@@ -1,6 +1,7 @@
 import { FormEvent, ChangeEvent, useState, useEffect } from "react";
 import axios from 'axios';
 import { enviarEmail } from "../../api/api";
+import { Link } from "react-router-dom";
 
 interface Estado {
   id: number;
@@ -231,7 +232,7 @@ export default function Formulario({ placeTextArea, assunto }: PropsFormulario) 
           name="termos politica de privacidade"
           id="politica"
         />
-        <label htmlFor="politica">Aceito a <a className="text-blue-600 underline" href="https://olharcerto.com.br/politica-de-privacidade/" target="_blank">política de privacidade</a>.</label>
+        <label htmlFor="politica">Aceito a <Link  className="text-blue-600 underline" to='/privacidade' target="_blank">política de privacidade</Link >.</label>
       </div>
 
       <button
