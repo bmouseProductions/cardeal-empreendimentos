@@ -1,6 +1,5 @@
-
 import AppRoutes from "./Router";
-import { ButtonUp } from "./components/ButtonUp";
+import { ButtonUp } from "./components/ButtonUp/index";
 import WhatsAppButton from "./components/whats/whats";
 
 function App() {
