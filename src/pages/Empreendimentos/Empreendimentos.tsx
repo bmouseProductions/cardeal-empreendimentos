@@ -1,13 +1,6 @@
 import React from 'react';
 import { FixedSizeList } from 'react-window';
 
-
-//import Banner from "../../components/banner/Banner";
-/*
-interface EmpreedimentosProps {
-  name: string;
-}*/
-
 const Empreendimentos2 = () => {
   const numberOfDivs = 15; // Total de divs que você quer renderizar
 
